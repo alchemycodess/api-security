@@ -7,6 +7,7 @@ app.use(express.json())
 
 app.get("/", (req, res) => {
     res.send("hello")
+    console.log("req.ip", req.ip);
 })
 
 app.listen(PORT, () => {
